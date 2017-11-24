@@ -7,6 +7,7 @@ This is an implementation of the paper [Does Higher Order LSTM Have Better Accur
 - Tensorflow 1.0 
 
 <br /> 
+
 ## Required Files
 
 #### Feature files
