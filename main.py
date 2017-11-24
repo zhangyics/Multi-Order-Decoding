@@ -54,19 +54,19 @@ with open(FLAGS.dir +"/ned.testb") as infile_test:
     gold_test = [[w for w in sent.strip().split('\n')]for sent in infile_test.read().split('\n\n')]
 
 
-with open("./data/outfile_test_1o_76.04.txt") as prob_file_1o:
+with open("./data/outfile_test_1o.txt") as prob_file_1o:
     test_sent_1o = [[[float(w) for w in sent.split(' ') if w != ''] for sent in sentence.split('\n')]for sentence in prob_file_1o.read().split('\n\n')]
-with open("./data/outfile_test_2o_80.51.txt") as prob_file_2o:
+with open("./data/outfile_test_2o.txt") as prob_file_2o:
     test_sent_2o = [[[float(w2) for w2 in sent2.split(' ') if w2 != ''] for sent2 in sentence2.split('\n')]for sentence2 in prob_file_2o.read().split('\n\n')]
-with open("./data/tagfile_test_1o_76.04.txt") as tag_file_test:
+with open("./data/tagfile_test_1o.txt") as tag_file_test:
     test_all_tag = [[[int(t) for t in word.strip().split(' ')] for word in sentence.strip().split('\n')] for sentence in
                     tag_file_test.read().strip().split('\n\n')]
 
-with open("./data/outfile_dev_1o_74.83.txt") as prob_file:
+with open("./data/outfile_dev_1o.txt") as prob_file:
     dev_sent_1o = [[[float(w) for w in sent.split(' ') if w != ''] for sent in sentence.split('\n')]for sentence in prob_file.read().split('\n\n')]
-with open("./data/outfile_dev_2o_77.99.txt") as prob_file2:
+with open("./data/outfile_dev_2o.txt") as prob_file2:
     dev_sent_2o = [[[float(w2) for w2 in sent2.split(' ') if w2 != ''] for sent2 in sentence2.split('\n')]for sentence2 in prob_file2.read().split('\n\n')]
-with open("./data/tagfile_dev_1o_74.83.txt") as tag_file:
+with open("./data/tagfile_dev_1o.txt") as tag_file:
     dev_all_tag = [[[int(t) for t in word.strip().split(' ')] for word in sentence.strip().split('\n')] for sentence in
                tag_file.read().strip().split('\n\n')]
 
