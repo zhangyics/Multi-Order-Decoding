@@ -108,7 +108,7 @@ def train(sess, datahelper, model):
                     best_result = F1_dev
 
 def test(sess, datahelper, model):
-    model.load(sess, '../file_2o/94.91_94.93/')
+    model.load(sess, '../file_2o/saved_2o_model/')
     print "save_dir = ",save_dir
     evaluate(sess, datahelper, model, 'dev')
     evaluate(sess,datahelper, model, 'test')
